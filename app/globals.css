@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-purple-royal: #2A0A3D;
+  --color-purple-secondary: #4B2268;
+  --color-maroon-deep: #52181F;
+  --color-orange-brand: #F89C1C;
+  --color-cream-offwhite: #F6EDE3;
+  --color-white-pure: #FFFFFF;
+  --color-gold-highlight: #FFC94A;
+
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-poppins);
+}
+
+/* Custom Utilities */
+@utility bg-madhubani {
+  background-image: url("/patterns/madhubani.svg");
+  background-repeat: repeat;
+  background-size: 400px 400px;
+}
+
+/* Global Styles */
+body {
+  @apply bg-purple-royal text-white-pure font-sans;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-heading;
+}
